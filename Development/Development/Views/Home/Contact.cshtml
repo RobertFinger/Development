@@ -1,17 +1,23 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Phynn's Page";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<head>
+	<link href="~/Content/MTG/generator.css" rel="stylesheet" />
+	<script src="~/Scripts/MTGScript/generator.js"></script>
+</head>
+<body>
+	<h2>@ViewBag.Title.</h2>
+<div id="output" class="content">
+	<ul id="phynnList">
+		<li>
+			<label for="spinner">Enter the number of players:</label>
+			<input id="spinner" name="value">
+		</li>
+		<li>
+			<text></text>
+		</li>
+	</ul>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+</div>
+</body>

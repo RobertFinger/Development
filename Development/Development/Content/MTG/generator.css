@@ -1,0 +1,18 @@
+﻿body {
+	background-color: black;
+}
+
+.content {
+	width: 100%;
+	background-color: gold;
+	display: block;
+	height: 600px;
+	color: black;
+}
+
+#phynnList li{
+	padding: 5px;
+	list-style: none;
+	display: block;
+}
+
