@@ -1,15 +1,23 @@
 ﻿@{
     ViewBag.Title = "Phynn's Page";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
 <head>
 	<link href="~/Content/MTG/generator.css" rel="stylesheet" />
 	<script src="~/Scripts/MTGScript/generator.js"></script>
 </head>
 <body>
-<div id="output">
-	
+	<h2>@ViewBag.Title.</h2>
+<div id="output" class="content">
+	<ul id="phynnList">
+		<li>
+			<label for="spinner">Enter the number of players:</label>
+			<input id="spinner" name="value">
+		</li>
+		<li>
+			<text></text>
+		</li>
+	</ul>
+
 </div>
 </body>
