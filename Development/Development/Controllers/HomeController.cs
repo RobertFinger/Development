@@ -26,5 +26,12 @@ namespace Development.Controllers
 
             return View();
         }
-    }
+
+		public ActionResult Nour()
+		{
+			ViewBag.Message = "Your contact page.";
+
+			return View();
+		}
+	}
 }

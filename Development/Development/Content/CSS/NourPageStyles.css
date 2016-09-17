@@ -1,0 +1,35 @@
+﻿body {
+}
+
+.main {
+
+}
+
+.kittyDiv {
+	display: inline-block;
+	width: 100%;
+	Height: 400px;
+	background-color: lightcyan
+}
+
+.players {
+	display: block;
+	background-color: lightblue;
+	padding: 5px 10px 5px 10px;
+}
+
+.playerOne {
+	margin: 2px 2px 2px 2px;
+	display: inline-block;
+	width: 49%;
+	background-color: green;
+	height: 200px;
+}
+
+.playerTwo {
+	margin: 2px 2px 2px 2px;
+	display: inline-block;
+	width: 49%;
+	background-color: red;
+	height: 200px;
+}
