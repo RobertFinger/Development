@@ -1,22 +1,43 @@
-﻿body {
+﻿footer {
+	position: fixed;
+	bottom: 0;
 }
 
-.main {
-
-}
-
-.kittyDiv {
-	display: inline-block;
+img {
+	height: 100%;
 	width: 100%;
-	Height: 400px;
-	background-color: lightcyan
+
 }
 
-.players {
-	display: block;
-	background-color: lightblue;
-	padding: 5px 10px 5px 10px;
+html {
+		height:100%; 
+		max-height:100%;
 }
+
+body {
+    margin-top: 35px;
+    padding:0;
+    height:100%;
+    max-height: 100%;
+}
+
+.content {
+	height: 500px;
+}
+
+.imgageDiv {
+	height: 500px;
+	margin: 0px 0px 20px 0px;
+}
+
+.imageClass {
+	background-color: lightskyblue;
+	height: 100%;
+	width: 49%;
+	display: inline-block;
+	margin: 5px 5px 5px 0px;
+}
+
 
 .playerOne {
 	padding: 5px 5px 5px 10px;
@@ -35,3 +56,4 @@
 	background-color: red;
 	height: 200px;
 }
+
