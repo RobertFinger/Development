@@ -183,12 +183,14 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\CSS\jquery-ui.css" />
-    <Content Include="Content\CSS\jquery-ui.min.css" />
-    <Content Include="Content\CSS\jquery-ui.structure.css" />
-    <Content Include="Content\CSS\jquery-ui.structure.min.css" />
-    <Content Include="Content\CSS\jquery-ui.theme.css" />
-    <Content Include="Content\CSS\jquery-ui.theme.min.css" />
+    <Content Include="Content\CSS\jquery-ui-1.12.1\jquery-ui.css" />
+    <Content Include="Content\CSS\jquery-ui-1.12.1\jquery-ui.js" />
+    <Content Include="Content\CSS\jquery-ui-1.12.1\jquery-ui.min.css" />
+    <Content Include="Content\CSS\jquery-ui-1.12.1\jquery-ui.min.js" />
+    <Content Include="Content\CSS\jquery-ui-1.12.1\jquery-ui.structure.css" />
+    <Content Include="Content\CSS\jquery-ui-1.12.1\jquery-ui.structure.min.css" />
+    <Content Include="Content\CSS\jquery-ui-1.12.1\jquery-ui.theme.css" />
+    <Content Include="Content\CSS\jquery-ui-1.12.1\jquery-ui.theme.min.css" />
     <Content Include="Content\CSS\NourPageStyles.css" />
     <Content Include="Content\Images\bugs_bunny.jpg" />
     <Content Include="Content\Images\pointRight.jpg" />
