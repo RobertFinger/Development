@@ -1,5 +1,5 @@
 ﻿@{
-	ViewBag.Title = "Nour's Dev Page";
+	ViewBag.Title = "Nour's Odd/Even Game";
 }
 
 <head>
@@ -18,8 +18,13 @@
 	<h2>@ViewBag.Title.</h2>
 	<div id="main" class="content">
 		<div class="main">
-			<div class="kittyDiv">
-				picture of cat
+			<div class="imgageDiv">
+				<div id="playerOneImageDiv" class ="imageClass">
+					<img id="playerOneImage" src="../Content/Images/bugs_bunny.jpg" />
+				</div>
+				<div id="playerTwoImageDiv" class="imageClass">
+					<img id="playerTwoImage" src="../Content/Images/bugs_bunny.jpg" />
+				</div>
 			</div>
 			<div class="players">
 				<div class="playerOne">
@@ -34,7 +39,7 @@
 						<label for="checkbox-4">Total Even</label>
 						<input type="checkbox" name="checkbox-4" id="checkbox-4">
 					</fieldset>
-					<button>Ready</button>
+					<button id="p1Ready">Ready</button>
 				</div>
 				<div class="playerTwo">
 					<fieldset class="widget">
@@ -48,10 +53,10 @@
 						<label for="checkbox-8">Total Even</label>
 						<input type="checkbox" name="checkbox-8" id="checkbox-8">
 					</fieldset>
-					<button>Ready</button>
+					<button id ="p2Ready">Ready</button>
 				</div>
 			</div>
-
+			<button id="reset">Reset</button>
 		</div>
 	</div>
 </body>
