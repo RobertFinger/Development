@@ -184,6 +184,15 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CSS\NourPageStyles.css" />
+    <Content Include="Content\Images\bugs_bunny.jpg" />
+    <Content Include="Content\Images\pointRight.jpg" />
+    <Content Include="Content\Images\tauntLeft.jpg" />
+    <Content Include="Content\Images\pointLeft.jpg" />
+    <Content Include="Content\Images\Lose.jpg" />
+    <Content Include="Content\Images\tauntRight.jpg" />
+    <Content Include="Content\Images\win.jpg" />
+    <Content Include="Content\Images\winLeft.jpg" />
+    <Content Include="Content\Images\winRight.jpg" />
     <Content Include="Content\MTG\generator.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
