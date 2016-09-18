@@ -1,0 +1,78 @@
+﻿@{
+	ViewBag.Title = "Nour's Odd/Even Game";
+}
+
+<head>
+	<link href="~/Content/CSS/NourPageStyles.css" rel="stylesheet"/>
+<<<<<<< HEAD
+
+	<link href="~/Content/CSS/jquery-ui.css" rel="stylesheet" />
+	<link href="~/Content/CSS/jquery-ui.min.css" rel="stylesheet" />
+	<link href="~/Content/CSS/jquery-ui.structure.css" rel="stylesheet" />
+	<link href="~/Content/CSS/jquery-ui.structure.min.css" rel="stylesheet" />
+	<link href="~/Content/CSS/jquery-ui.theme.css" rel="stylesheet" />
+	<link href="~/Content/CSS/jquery-ui.theme.min.css" rel="stylesheet" />
+	<link href="~/Content/CSS/NourPageStyles.css" rel="stylesheet" />
+	<script src="~/Scripts/NourScripts/NourScripts.js"></script>
+
+
+
+=======
+	<link rel="stylesheet" href='@Url.Content("http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")'>
+
+	@Scripts.Render("~/Scripts/NourScripts/NourScripts")
+	@Scripts.Render("~/Scripts/jquery-3.1.0.min.js")
+	@Scripts.Render("~/Scripts/jquery-ui-1.12.0.js")
+>>>>>>> master
+<!DOCTYPE html>
+	<html>
+<head>
+
+</head>
+
+<body>
+	<h2>@ViewBag.Title.</h2>
+	<div id="main" class="content">
+		<div class="main">
+			<div class="imgageDiv">
+				<div id="playerOneImageDiv" class ="imageClass">
+					<img id="playerOneImage" src="../Content/Images/bugs_bunny.jpg" />
+				</div>
+				<div id="playerTwoImageDiv" class="imageClass">
+					<img id="playerTwoImage" src="../Content/Images/bugs_bunny.jpg" />
+				</div>
+			</div>
+			<div class="players">
+				<div class="playerOne">
+					<fieldset class="widget">
+						<legend>Choose Outcome: </legend>
+						<label for="checkbox-1">Player 1  Odd </label>
+						<input type="checkbox" name="checkbox-1" id="checkbox-1">
+						<label for="checkbox-2">Player 2  Odd </label>
+						<input type="checkbox" name="checkbox-2" id="checkbox-2">
+						<label for="checkbox-3">Total Odd</label>
+						<input type="checkbox" name="checkbox-3" id="checkbox-3">
+						<label for="checkbox-4">Total Even</label>
+						<input type="checkbox" name="checkbox-4" id="checkbox-4">
+					</fieldset>
+					<button id="p1Ready">Ready</button>
+				</div>
+				<div class="playerTwo">
+					<fieldset class="widget">
+						<legend>Choose Outcome: </legend>
+						<label for="checkbox-5">Player 1 Odd </label>
+						<input type="checkbox" name="checkbox-5" id="checkbox-5">
+						<label for="checkbox-6">Player 2 Odd </label>
+						<input type="checkbox" name="checkbox-6" id="checkbox-6">
+						<label for="checkbox-7">Total Odd</label>
+						<input type="checkbox" name="checkbox-7" id="checkbox-7">
+						<label for="checkbox-8">Total Even</label>
+						<input type="checkbox" name="checkbox-8" id="checkbox-8">
+					</fieldset>
+					<button id ="p2Ready">Ready</button>
+				</div>
+			</div>
+			<button id="reset">Reset</button>
+		</div>
+	</div>
+</body>
