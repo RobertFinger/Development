@@ -12,10 +12,12 @@ $(document).ready(function() {
 
 	$("#p1Ready").click(function() {
 		playerOneReady = true;
+		$("#p1").addClass("addBorder");
 	});
 
 	$("#p2Ready").click(function() {
 		playerTwoReady = true;
+		$("#p2").addClass("addBorder");
 	});
 
 	$("#reset").click(function() {
@@ -167,6 +169,10 @@ function Reset() {
 
 	$("#playerOneImage").attr("src", "../Content/Images/bugs_bunny.jpg");
 	$("#playerTwoImage").attr("src", "../Content/Images/bugs_bunny.jpg");
+
+
+	$("#p1").removeClass("addBorder");
+	$("#p2").removeClass("addBorder");
 }
 
 function PlayerTwoWins() {

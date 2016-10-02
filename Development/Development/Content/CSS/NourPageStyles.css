@@ -66,3 +66,7 @@ body {
 	display: block;
 	margin-bottom: 50px;
 }
+
+.addBorder {
+	border: 2px solid black;
+}
