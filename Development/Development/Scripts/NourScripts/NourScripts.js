@@ -39,49 +39,49 @@ function EvaluateUserInput() {
 	
 	var totalIsEven = isEven(playerOneNumber + playerTwoNumber);
 	
-	if ($("#checkbox-1").prop('checked') === true && !playerOneIsEven) {
+	if ($("#checkbox-1").prop('checked') == true && !playerOneIsEven) {
 			playerOneScore++;
 		} else {
 			playerOneScore--;
 		}
 
-	if ($("#checkbox-2").prop('checked') === true && !playerTwoIsEven) {
+	if ($("#checkbox-2").prop('checked') == true && !playerTwoIsEven) {
 			playerOneScore++;
 		} else {
 			playerOneScore--;
 		}
 
-	if ($("#checkbox-3").prop('checked') === true && !totalIsEven) {
+	if ($("#checkbox-3").prop('checked') == true && !totalIsEven) {
 			playerOneScore++;
 		} else {
 			playerOneScore--;
 		}
 
-	if ($("#checkbox-4").prop('checked')=== true && totalIsEven) {
+	if ($("#checkbox-4").prop('checked') == true && totalIsEven) {
 			playerOneScore++;
 		} else {
 			playerOneScore--;
 		}
 
-	if ($("#checkbox-5").prop('checked') === true && !playerOneIsEven) {
+	if ($("#checkbox-5").prop('checked') == true && !playerOneIsEven) {
 			playerOneScore++;
 		} else {
 			playerOneScore--;
 		}
 
-	if ($("#checkbox-6").prop('checked') === true && !playerTwoIsEven) {
+	if ($("#checkbox-6").prop('checked') == true && !playerTwoIsEven) {
 			playerTwoScore++;
 		} else {
 		playerTwoScore--;
 		}
 
-		if ($("#checkbox-7").prop('checked') === true && !totalIsEven) {
+		if ($("#checkbox-7").prop('checked') == true && !totalIsEven) {
 			playerTwoScore++;
 		} else {
 			playerTwoScore--;
 		}
 
-		if ($("#checkbox-8").prop('checked') === true && totalIsEven) {
+		if ($("#checkbox-8").prop('checked') == true && totalIsEven) {
 			playerTwoScore++;
 		} else {
 			playerTwoScore--;
