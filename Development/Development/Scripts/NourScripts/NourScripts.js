@@ -47,7 +47,7 @@ function EvaluateUserInput() {
 
 	if ($("#checkbox-2").prop('checked') == true && !playerTwoIsEven) {
 			playerOneScore++;
-	} else if ($("#checkbox-2").prop('checked') == true)
+	} else if ($("#checkbox-2").prop('checked') == true) {
 			playerOneScore--;
 		}
 
