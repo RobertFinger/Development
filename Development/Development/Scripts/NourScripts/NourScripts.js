@@ -41,49 +41,49 @@ function EvaluateUserInput() {
 	
 	if ($("#checkbox-1").prop('checked') == true && !playerOneIsEven) {
 			playerOneScore++;
-		} else {
+		} else if ($("#checkbox-1").prop('checked') == true) {
 			playerOneScore--;
 		}
 
 	if ($("#checkbox-2").prop('checked') == true && !playerTwoIsEven) {
 			playerOneScore++;
-		} else {
+	} else if ($("#checkbox-2").prop('checked') == true)
 			playerOneScore--;
 		}
 
 	if ($("#checkbox-3").prop('checked') == true && !totalIsEven) {
 			playerOneScore++;
-		} else {
+		} else if ($("#checkbox-3").prop('checked') == true) {
 			playerOneScore--;
 		}
 
 	if ($("#checkbox-4").prop('checked') == true && totalIsEven) {
 			playerOneScore++;
-		} else {
+	} else if ($("#checkbox-4").prop('checked') == true) {
 			playerOneScore--;
 		}
 
 	if ($("#checkbox-5").prop('checked') == true && !playerOneIsEven) {
 			playerOneScore++;
-		} else {
+	} else if ($("#checkbox-5").prop('checked') == true) {
 			playerOneScore--;
 		}
 
 	if ($("#checkbox-6").prop('checked') == true && !playerTwoIsEven) {
 			playerTwoScore++;
-		} else {
+	} else if ($("#checkbox-6").prop('checked') == true) {
 		playerTwoScore--;
 		}
 
 		if ($("#checkbox-7").prop('checked') == true && !totalIsEven) {
 			playerTwoScore++;
-		} else {
+		} else if ($("#checkbox-7").prop('checked') == true) {
 			playerTwoScore--;
 		}
 
 		if ($("#checkbox-8").prop('checked') == true && totalIsEven) {
 			playerTwoScore++;
-		} else {
+		} else if ($("#checkbox-8").prop('checked') == true) {
 			playerTwoScore--;
 		}
 
