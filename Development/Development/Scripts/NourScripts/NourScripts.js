@@ -4,7 +4,11 @@ var playerOneReady = false;
 var playerTwoReady = false;
 
 $(document).ready(function() {
+
+	Reset();
+
 	$("input").checkboxradio();
+
 
 	$("#p1Ready").click(function() {
 		playerOneReady = true;
@@ -36,60 +40,62 @@ function EvaluateUserInput() {
 	$("#p2Text").val(playerTwoNumber);
 
 	var playerTwoIsEven = isEven(playerTwoNumber);
-	
 	var totalIsEven = isEven(playerOneNumber + playerTwoNumber);
-	
-	if ($("#checkbox-1").prop('checked') == true && !playerOneIsEven) {
-			playerOneScore++;
-		} else if ($("#checkbox-1").prop('checked') == true) {
-			playerOneScore--;
-		}
 
-	if ($("#checkbox-2").prop('checked') == true && !playerTwoIsEven) {
-			playerOneScore++;
-	} else if ($("#checkbox-2").prop('checked') == true) {
-			playerOneScore--;
-		}
+	if ($("#checkbox-1").prop("checked") == true && !playerOneIsEven) {
+		playerOneScore++;
+	} else if ($("#checkbox-1").prop("checked") == true) {
+		playerOneScore--;
+	}
 
-	if ($("#checkbox-3").prop('checked') == true && !totalIsEven) {
-			playerOneScore++;
-		} else if ($("#checkbox-3").prop('checked') == true) {
-			playerOneScore--;
-		}
-
-	if ($("#checkbox-4").prop('checked') == true && totalIsEven) {
-			playerOneScore++;
-	} else if ($("#checkbox-4").prop('checked') == true) {
-			playerOneScore--;
-		}
-
-	if ($("#checkbox-5").prop('checked') == true && !playerOneIsEven) {
-			playerOneScore++;
-	} else if ($("#checkbox-5").prop('checked') == true) {
-			playerOneScore--;
-		}
-
-	if ($("#checkbox-6").prop('checked') == true && !playerTwoIsEven) {
-			playerTwoScore++;
-	} else if ($("#checkbox-6").prop('checked') == true) {
+	if ($("#checkbox-5").prop("checked") == true && !playerOneIsEven) {
+		playerTwoScore++;
+	} else if ($("#checkbox-5").prop("checked") == true) {
 		playerTwoScore--;
-		}
-
-		if ($("#checkbox-7").prop('checked') == true && !totalIsEven) {
-			playerTwoScore++;
-		} else if ($("#checkbox-7").prop('checked') == true) {
-			playerTwoScore--;
-		}
-
-		if ($("#checkbox-8").prop('checked') == true && totalIsEven) {
-			playerTwoScore++;
-		} else if ($("#checkbox-8").prop('checked') == true) {
-			playerTwoScore--;
-		}
+	}
 
 
-		$("#p1Score").val(playerOneScore);
-		$("#p2Score").val(playerTwoScore);
+	if ($("#checkbox-2").prop("checked") == true && !playerTwoIsEven) {
+		playerOneScore++;
+	} else if ($("#checkbox-2").prop("checked") == true) {
+		playerOneScore--;
+	}
+
+	if ($("#checkbox-6").prop("checked") == true && !playerTwoIsEven) {
+		playerTwoScore++;
+	} else if ($("#checkbox-6").prop("checked") == true) {
+		playerTwoScore--;
+	}
+
+
+	if ($("#checkbox-3").prop("checked") == true && !totalIsEven) {
+		playerOneScore++;
+	} else if ($("#checkbox-3").prop("checked") == true) {
+		playerOneScore--;
+	}
+
+	if ($("#checkbox-7").prop("checked") == true && !totalIsEven) {
+		playerTwoScore++;
+	} else if ($("#checkbox-7").prop("checked") == true) {
+		playerTwoScore--;
+	}
+
+
+	if ($("#checkbox-4").prop("checked") == true && totalIsEven) {
+		playerOneScore++;
+	} else if ($("#checkbox-4").prop("checked") == true) {
+		playerOneScore--;
+	}
+
+	if ($("#checkbox-8").prop("checked") == true && totalIsEven) {
+		playerTwoScore++;
+	} else if ($("#checkbox-8").prop("checked") == true) {
+		playerTwoScore--;
+	}
+
+
+	$("#p1Score").val(playerOneScore);
+	$("#p2Score").val(playerTwoScore);
 }
 
 function isEven(number) {
@@ -103,11 +109,14 @@ function DetermineWinner() {
 
 		if (playerOneScore > playerTwoScore) {
 			PlayerOneWins();
-		} else {
+		} else if (playerOneScore < playerTwoScore) {
 			PlayerTwoWins();
+		} else {
+			alert("a tie? awww. try again.");
+			Reset();
 		}
 	} else {
-		if (!playerOneReady ) {
+		if (!playerOneReady) {
 
 			alert("Player One Isn't Ready");
 		} else {
@@ -123,21 +132,38 @@ function GetRandomNumber() {
 
 function Reset() {
 
-	$("#p1Text").val("");
-	$("#p2Text").val("");
 
-	$("#p1Score").val("");
-	$("#p2Score").val("");
+	$("#p1Text").val("Number");
+	$("#p2Text").val("Number");
 
-	if ($("#checkbox-1").prop('checked', true)) { $("#checkbox-1").click() };
-	if ($("#checkbox-2").prop('checked', true)) { $("#checkbox-2").click() };
-	if ($("#checkbox-3").prop('checked', true)) { $("#checkbox-3").click() };
-	if ($("#checkbox-4").prop('checked', true)) { $("#checkbox-4").click() };
-	if ($("#checkbox-5").prop('checked', true)) { $("#checkbox-5").click() };
-	if ($("#checkbox-6").prop('checked', true)) { $("#checkbox-6").click() };
-	if ($("#checkbox-7").prop('checked', true)) { $("#checkbox-7").click() };
-	if ($("#checkbox-8").prop('checked', true)) { $("#checkbox-8").click() };
-																   
+	$("#p1Score").val("Score");
+	$("#p2Score").val("Score");
+
+	if ($("#checkbox-1").prop("checked", true)) {
+		$("#checkbox-1").click()
+	};
+	if ($("#checkbox-2").prop("checked", true)) {
+		$("#checkbox-2").click()
+	};
+	if ($("#checkbox-3").prop("checked", true)) {
+		$("#checkbox-3").click()
+	};
+	if ($("#checkbox-4").prop("checked", true)) {
+		$("#checkbox-4").click()
+	};
+	if ($("#checkbox-5").prop("checked", true)) {
+		$("#checkbox-5").click()
+	};
+	if ($("#checkbox-6").prop("checked", true)) {
+		$("#checkbox-6").click()
+	};
+	if ($("#checkbox-7").prop("checked", true)) {
+		$("#checkbox-7").click()
+	};
+	if ($("#checkbox-8").prop("checked", true)) {
+		$("#checkbox-8").click()
+	};
+
 
 	$("#playerOneImage").attr("src", "../Content/Images/bugs_bunny.jpg");
 	$("#playerTwoImage").attr("src", "../Content/Images/bugs_bunny.jpg");
